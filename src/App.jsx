@@ -1,7 +1,7 @@
 import "./App.css";
 import Sidebar from "./component/Sidebar/Sidebar";
 import Header from "./component/Header/Header";
-import StatCard from "./component/StatCard/Statcard";
+import StatCard from "./component/StatCard/StatCard";
 
 function App() {
   return (

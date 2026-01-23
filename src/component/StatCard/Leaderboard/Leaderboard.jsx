@@ -119,7 +119,7 @@ const user3 = users[10];
                       width: "300px",
                     }}
                   >
-                    <h6>1</h6>
+                    <h6>2</h6>
                     <ChevronDown
                       height={100}
                       style={{ color: "red" }}
@@ -170,7 +170,7 @@ const user3 = users[10];
                       width: "300px",
                     }}
                   >
-                    <h6>1</h6>
+                    <h6>3</h6>
                     <ChevronUp
                       height={100}
                       style={{ color: "green" }}
