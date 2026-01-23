@@ -1,0 +1,65 @@
+/* PROGRESS BAR  */
+h5 {
+  margin-left: 30px;
+}
+.progressBar {
+  display: flex;
+  /* justify-content: space-around; */
+
+  align-items: center;
+  margin-inline: 35px;
+}
+
+.progressImage img {
+  width: 49px;
+  height: 32px;
+  border-radius: 6px;
+}
+
+.progressLine {
+    margin-top: 23px;
+  overflow: hidden;
+  margin-left: 30px;
+  width: 310px;
+  height: 10px;
+  opacity: 1;
+  border-radius: 100px;
+  background: linear-gradient(143.13deg, #ffbf1a 5.36%, #ff4080 94.64%);
+}
+
+ .progressLineGreen {
+    overflow: hidden;
+  margin-left: 30px;
+  width: 310px;
+  height: 10px;
+  margin-top: 23px;
+  opacity: 1;
+  border-radius: 100px;
+    background: linear-gradient(270deg, #2FEA9B 15.5%, #7FDD53 85.5%);
+
+
+}
+
+.ProgressFillGreen {
+  height: 10px;
+  width: 100%;
+  background-color: #c1f3ceb9;
+  margin-top: 23px;
+  border-top-right-radius: 100px;
+  border-bottom-right-radius: 100px;
+}
+
+.ProgressFill {
+  height: 10px;
+  width: 100%;
+  background-color: #f3c1d3b9;
+  margin-top: 23px;
+  border-top-right-radius: 100px;
+  border-bottom-right-radius: 100px;
+}
+
+.progressBardetails{
+    margin-left: 115px;
+    margin-bottom: -15px;
+    
+}

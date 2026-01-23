@@ -1,0 +1,84 @@
+.header {
+  width: 100%;
+}
+.header-contents {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+.download-icon {
+  text-align: center;
+  padding-right: 8px;
+}
+
+.Underline {
+  background-color: rgba(128, 128, 128, 0.279);
+  height: 1px;
+  width: 96%;
+  margin-left: 25px;
+  margin-top: 6px;
+}
+
+.Selection-Container {
+  margin-top: 20px;
+  margin-left: 25px;
+  margin-right: 25px;
+  display: flex;
+  justify-items: center;
+  gap: 20px;
+}
+
+.selection-wrapper {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  width: 330px;
+  border-radius: 10px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  padding: 0 12px;
+  position: relative;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  background: #fff;
+  flex-wrap: wrap;
+}
+
+.selection-wrapper label {
+  color: gray;
+  font-weight: 400;
+  margin-right: 8px;
+  padding: 0;
+  width: auto;
+}
+
+.timeframe {
+  outline: none;
+  padding: 0;
+}
+
+.selection-wrapper select {
+  cursor: pointer;
+  flex: 1;
+  border: none;
+  outline: none;
+  background: transparent;
+  padding: 8px 28px 8px 0;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+select,
+option {
+  margin-top: 3px;
+}
+
+.dropDown {
+  width: 600px;
+  color: red;
+  outline: none;
+  font-size: 15px;
+  border: 30px;
+}

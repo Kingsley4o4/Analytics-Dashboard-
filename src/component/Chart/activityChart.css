@@ -1,0 +1,43 @@
+.activity-chart .recharts-rectangle {
+  stroke: none !important;
+  outline: none !important;
+}
+
+.activity-chart .recharts-rectangle:focus,
+.activity-chart .recharts-rectangle:active,
+.activity-chart rect:focus {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+.activity-chart {
+  -webkit-tap-highlight-color: transparent;
+
+  border-radius: 20px;
+  box-sizing: border-box;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  
+}
+
+.activity-chart:focus,
+.activity-chart *:focus,
+.activity-chart .recharts-wrapper:focus,
+.activity-chart .recharts-surface:focus {
+  outline: none !important;
+  box-shadow: none !important;
+  border: none !important;
+}
+
+.activity-chart svg rect,
+.activity-chart svg g rect {
+  stroke: none !important;
+  outline: none !important;
+}
+
+.underlineActivity{
+     background-color: rgba(128, 128, 128, 0.279);
+  height: 1px;
+  width: 100%;
+  
+  margin-top: 6px;
+}
