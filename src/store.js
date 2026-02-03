@@ -16,12 +16,6 @@ export const store = configureStore ({
         getDefaultMiddleware().concat(activityApi.middleware).concat(imgApi.middleware),
 
 
-    //     reducer : {
-    //     [imgApi.reducerPath]:imgApi.reducer,
-    // },
-
-    //   middleware:(getDefaultMiddleware) =>
-    //     getDefaultMiddleware().concat(imgApi.middleware),
 
   
 

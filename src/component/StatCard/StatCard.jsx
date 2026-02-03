@@ -1,69 +1,94 @@
-
-
 import React from "react";
 import "./statcard.css";
 import ActivityChart from "../Chart/ActivityChart";
 import SparkLine from "../Chart/SparkLine";
-// 
+//
 import ProgressBarTrack from "./ProgressBarTrack";
-import Img1 from "../StatCard/Img/img1.png"
-import Img2 from "../StatCard/Img/img2.png"
-import Img3 from "../StatCard/Img/img3.png"
-import Img4 from "../StatCard/Img/img4.png"
-import Img5 from "../StatCard/Img/img5.png"
-import Img6 from "../StatCard/Img/img6.png"
-import { ArrowBigDown, ArrowDown, ChevronUp,ChevronDown } from "lucide-react";
+import Img1 from "../StatCard/Img/img1.png";
+import Img2 from "../StatCard/Img/img2.png";
+import Img3 from "../StatCard/Img/img3.png";
+import Img4 from "../StatCard/Img/img4.png";
+import Img5 from "../StatCard/Img/img5.png";
+import Img6 from "../StatCard/Img/img6.png";
+import { ArrowBigDown, ArrowDown, ChevronUp, ChevronDown } from "lucide-react";
 
-import Leaderboard from "../StatCard/Leaderboard/Leaderboard"
+import Leaderboard from "../StatCard/Leaderboard/Leaderboard";
 
-
-
-     
 function StatCard() {
- 
- 
-   
   return (
     <div className="Statcard">
       <div className="Statcard-Wrapper">
         <div className="firstCard">
-          <div className="box-1">
-            <p>Active User</p>
-            <h3>
-              24<span className="gray">/80</span>
-            </h3>
-          </div>
-          <div className="box-2">
-            <p>Answered Questions</p>
-            <h3>3,296</h3>
-          </div>
-          <div className="box-3">
-            <p>Av. Session Length</p>
-            <h3>2m 34s</h3>
-          </div>
-          <div className="secondBox">
+        <div style={{ display : "flex", width :'100%', flexDirection:'column'}} className="divider">
+        <div className="firstCardWrapper">
+          <div className="box1-container">
             <div className="box-1">
+              <p>Active User</p>
+              <h3>
+                24<span className="gray">/80</span>
+              </h3>
+            </div>
+          </div>
+          <div className="box2-container">
+            <div className="box-2">
+              <p>Answered Questions</p>
+              <h3>3,296</h3>
+            </div>
+          </div>
+          <div className="box34-container">
+            <div className="box-3 avg-session-mobile">
+              <p>Av. Session Length</p>
+              <h3>2m 34s</h3>
+            </div>
+          </div>
+         </div>
+
+          <div className="secondBox">
+            
+            <div className="box-4 av-session">
+              <p>Av. Session Length</p>
+              <h3>2m 34s</h3>
+           </div>
+            
+        
+              
+            {/* <div className="box-1">
+              <div className="new-avarageBox">
+                <p>Av. Session Length</p>
+                <h3>2m 34s</h3>
+              </div>
+            </div> */}
+            <div className="box-5">
+            {/* <div className="secondbox-1"> */}
               <p>Starting Knowledge</p>
               <h3>64%</h3>
               <SparkLine />
+              {/* </div> */}
             </div>
-            <div className="box-2">
+            <div className="box-6">
+            {/* <div className="secondbox-1"> */}
               <p>Current Knowledge</p>
               <h3>60%</h3>
               <SparkLine />
-            </div>
-            <div className="box-3">
+              </div>
+            {/* </div> */}
+            <div className="box-6">
               <p>Knowledge Gain</p>
               <h3>+4%</h3>
               <SparkLine />
             </div>
+            
+            </div>
           </div>
+         
         </div>
-
-        <div className="secondCard">
+        
+                <div className="secondCard">
           <ActivityChart />
         </div>
+      
       </div>
+        
       {/* TOPIC SECTION */}
       <div className="topicCard">
         <div className="topicCardWrapper">
@@ -83,9 +108,6 @@ function StatCard() {
             <div className="progressBar">
               <div className="progressImage">
                 <img src={Img1} alt="" />
-               
-              
-                
               </div>
 
               <div className="progressLineGreen"></div>
@@ -157,15 +179,13 @@ function StatCard() {
         <div>
           <div className="leaderCardWrapper">
             <div className="leaderTopicCard">
+              <Leaderboard />
 
-              <Leaderboard/>
-
-              {/* come later */}
+            
             </div>
 
             <div className="secondleaderTopicCard">
-             <Leaderboard showImage ={false}/>
-             
+              <Leaderboard showImage={false} />
             </div>
           </div>
         </div>
@@ -175,5 +195,3 @@ function StatCard() {
 }
 
 export default StatCard;
-
-    

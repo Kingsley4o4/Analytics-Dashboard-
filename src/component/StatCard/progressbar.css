@@ -4,6 +4,8 @@ h5 {
 }
 .progressBar {
   display: flex;
+ 
+ 
   /* justify-content: space-around; */
 
   align-items: center;

@@ -41,3 +41,34 @@
   
   margin-top: 6px;
 }
+
+@media (max-width: 360px) {
+ .activity-chart{
+  margin-top: 15px;
+
+  
+
+
+
+ }
+ /* @media (max-width:460px) {
+
+ .activity-chart{
+
+
+
+}
+
+ }
+ 
+
+
+/* Tablet */
+@media (min-width: 641px) and (max-width: 1024px) {
+
+}
+
+
+/* Desktop */
+@media (min-width: 1025px) {
+}

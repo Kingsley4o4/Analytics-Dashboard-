@@ -28,7 +28,7 @@ const ActivityChart = ({ data }) => {
   const chartData = activityDetails.map((item) => ({ ...item, max: maxVal }));
 
   return (
-    <div className="activity-chart" style={{ width: "100%", height: 290 }}>
+    <div className="activity-chart" style={{ width: "100%",  height: "290px" }}>
       <div style={{ display: "flex", justifyContent: "space-between" }}>
         <span
           style={{

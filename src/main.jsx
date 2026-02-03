@@ -8,3 +8,12 @@ createRoot(document.getElementById('root')).render(
     <App />
   </Provider>,
 )
+
+// /* Mobile */
+// @media (max-width: 640px)
+
+// /* Tablet */
+// @media (min-width: 641px) and (max-width: 1024px)
+
+// /* Desktop */
+// @media (min-width: 1025px)

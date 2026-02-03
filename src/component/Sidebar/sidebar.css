@@ -58,3 +58,130 @@
   cursor: pointer;
   margin-inline: 10px;
 }
+
+/* Responsiveness */
+
+/* Mobile */
+@media (max-width: 640px) {
+  .sidebar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100vh;
+    width: 230px;
+    z-index: 1000;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+  }
+
+  .sidebar.show {
+    transform: translateX(0);
+  }
+
+  .sidebar-wrapper {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding: 0;
+  }
+
+  .otherMenu {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+  }
+
+  .otherMenu h2 {
+    padding: 12px 15px;
+    margin: 0;
+    font-size: 16px;
+  }
+
+  .user-profile {
+    margin-top: auto !important;
+    flex-shrink: 0;
+    padding: 15px 20px;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+  }
+
+  .user-profile img {
+    height: 35px;
+    width: 35px;
+    margin: 0 !important;
+    margin-bottom: 8px !important;
+  }
+
+  .user-profile span {
+    margin: 0 !important;
+    display: block;
+  }
+
+  .underline {
+    display: none;
+  }
+
+  .Underline {
+    display: none;
+  }
+  .Logo {
+    margin: 0 -25px;
+    padding: 0;
+  }
+}
+
+/* Tablet */
+@media (min-width: 641px) and (max-width: 1024px) {
+  .otherMenu h2 {
+    font-size: 18px;
+    font-weight: 400;
+    padding: 36px;
+    cursor: pointer;
+    display: flex;
+  }
+
+  .user-profile {
+    margin-bottom: 50px;
+  }
+
+  .sidebar.show {
+    transform: translateX(0);
+  }
+  .sidebar {
+    display: flex;
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100vh;
+
+    width: 50%;
+
+    z-index: 1000;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+  }
+
+  .download {
+    display: none;
+  }
+
+  .Selection-Container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+/* Desktop */
+@media (min-width: 1025px) {
+  .menuBtn {
+    display: none;
+  }
+}

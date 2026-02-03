@@ -1,5 +1,6 @@
 .header {
   width: 100%;
+  padding: 15px 0;
 }
 .header-contents {
   display: flex;
@@ -7,6 +8,24 @@
   justify-content: space-between;
   padding-left: 25px;
   padding-right: 25px;
+  gap: 15px;
+}
+
+.mobile-menu h3 {
+  margin: 0;
+  padding: 8px 12px;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.download {
+  display: flex;
+  align-items: center;
+  padding: 8px 12px;
+  margin: 0;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
 }
 
 .download-icon {
@@ -81,4 +100,74 @@ option {
   outline: none;
   font-size: 15px;
   border: 30px;
+}
+
+/* Mobile */
+@media (max-width: 640px) {
+  .mobile-menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+  }
+
+  .mobile-menu h3 {
+    margin: 0;
+    padding: 8px 12px;
+    font-size: 20px;
+    font-weight: 600;
+  }
+
+  .mobile-menu img {
+    height: 35px;
+    width: 35px;
+    object-fit: contain;
+  }
+
+  .header-contents {
+    margin: 0;
+    padding: 10px 15px;
+    gap: 10px;
+  }
+
+  .download {
+    display: none;
+  }
+
+  .Selection-Container {
+    display: none;
+  }
+  .selection-main {
+    display: contents;
+  }
+}
+
+/* Tablet */
+@media (min-width: 641px) and (max-width: 1024px) {
+  .selection-main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    margin-top: 20px;
+
+    margin: 0;
+  }
+
+  .selection-wrapper {
+    width: 13em;
+  }
+  .download {
+    display: none;
+  }
+}
+
+/* Desktop */
+@media (min-width: 1025px) {
+  .menuicon {
+    display: none;
+  }
+  .selection-main {
+    display: contents;
+  }
 }
