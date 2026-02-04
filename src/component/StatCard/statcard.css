@@ -1,13 +1,21 @@
-
-
 .Statcard {
-  margin: 0;
+  
+ margin:0;
+
+
+  
+  
+
+
+ 
 }
 
 .Statcard-Wrapper {
+
   display: flex;
   margin-left: 28px;
   margin-top: 25px;
+
    /* border:2px solid red; */
 }
 
@@ -17,8 +25,6 @@
   height: 322px;
   column-gap: 20px;
   flex-wrap: wrap;
- 
-  
 }
 
 .box-1,
@@ -62,10 +68,12 @@ h3 {
   font-weight: 500;
 }
 
-.secondBox {
+.secondBox  {
   display: flex;
   column-gap: 20px;
 }
+
+ 
 
 /* topic card style */
 
@@ -125,14 +133,13 @@ h3 {
 
 .leaderTopicCardContent {
   margin-inline: 25px;
-  
+
   display: flex;
   align-items: center;
 
   border-radius: 40px;
-  display: flex;
-  justify-content: space-between;
 
+  justify-content: space-between;
 }
 
 .leaderTopicCardContenttt {
@@ -143,7 +150,6 @@ h3 {
 
   display: flex;
   flex-direction: column;
- 
 }
 
 /* Responsiveness */
@@ -155,32 +161,31 @@ h3 {
     justify-content: center;
     align-items: center;
     width: 96vw;
+    
+  
+    
   }
+
   .box-4,
   .box-5,
   .box-6 {
     width: 43vw;
     height: 20vh;
+  
   }
 }
-@media (max-width: 640px) {
-  /* .secondBox {
-     display: flex;
-    flex-wrap: wrap;
-   
-  } */
 
+@media (max-width: 640px) {
   .Statcard-Wrapper {
     flex-wrap: wrap;
-    
     margin: 0;
-    /* border: 2px solid; */
+
     align-items: center;
   }
 
   .box2-container {
-    width: 90vw;
-    padding-inline: 10px;
+    width: 100%;
+   
 
     display: flex;
     justify-content: center;
@@ -188,8 +193,8 @@ h3 {
   }
 
   .box1-container {
-    width: 90vw;
-    padding-inline: 10px;
+    width: 100%;
+    
 
     display: flex;
     justify-content: center;
@@ -197,18 +202,21 @@ h3 {
 
   .box-1,
   .box-2 {
-    width: 90vw;
+    width: 100%;
+    margin-inline: 8px;
 
     display: flex;
     justify-content: center;
     flex-direction: column;
   }
   .secondBox {
+    
+
     margin-top: 20px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-     gap: 20px;
+    gap: 20px;
   }
   .secondbox-1 {
     width: 154px;
@@ -219,15 +227,11 @@ h3 {
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   }
 
-  
   .secondCard {
     margin-top: 20em;
     margin-inline: 15px;
     display: flex;
     justify-content: center;
-   
-    
-    
   }
   .topicCardWrapper {
     display: flex;
@@ -240,7 +244,6 @@ h3 {
 
   .firstTopicCard,
   .secondTopicCard {
-    /* max-width: 345px; */
     max-width: 100%;
 
     display: flex;
@@ -262,7 +265,7 @@ h3 {
     justify-content: center;
     flex-direction: column;
     margin-top: 20px;
-  
+
     max-width: 100%;
   }
 
@@ -273,12 +276,6 @@ h3 {
 
 /* Tablet */
 @media (min-width: 641px) and (max-width: 1024px) {
-  body {
-
-  overflow-x: hidden;
-    
-  }
-
   .avg-session-mobile {
     display: none;
   }
@@ -315,19 +312,20 @@ h3 {
   }
   .firstCardWrapper {
     margin: 0;
-    width: 100%;
+    /* width: 100%; */
+    margin-inline: 15px;
     display: flex;
-    /* flex-wrap: wrap; */
+
     justify-content: space-between;
   }
 
   .secondBox {
     display: flex;
-
+    margin-inline: 15px;
     flex-wrap: nowrap;
     justify-content: space-between;
+    
 
-    /* width: 100%; */
     margin-top: 40px;
   }
 
@@ -340,12 +338,10 @@ h3 {
     flex-direction: column;
     align-items: center;
     height: 150px;
-    width: 220px;
+    width: 206px;
     border-radius: 20px;
   }
-  /* .box2-container{
-    
-  } */
+
   .box-3,
   .avg-session-mobile {
     display: flex;
@@ -353,7 +349,7 @@ h3 {
     justify-content: center;
     align-items: center;
     height: 150px;
-    width: 220px;
+    width: 206px;
     border-radius: 20px;
   }
 
@@ -362,17 +358,11 @@ h3 {
     display: none;
   }
 
-  /* .box1-container,
-  .box2-container,
-  .box34-container {
-    display: contents;
-  } */
-
   .secondCard {
-    width: 94%;
+    width: 100%;
 
     margin-top: 4em;
-    margin-inline: 20px;
+    /* margin-inline: 20px; */
     display: flex;
     justify-content: center;
   }
@@ -397,8 +387,6 @@ h3 {
   }
   .secondleaderTopicCard {
     width: 100%;
-
-    /* margin-top: 20px; */
   }
 
   .leaderCardWrapper {
@@ -432,8 +420,6 @@ h3 {
   }
 
   .firstCardWrapper {
-    /* margin: 0; */
-    /* width: 100%; */
     gap: 20px;
     display: flex;
   }

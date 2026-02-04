@@ -19,76 +19,73 @@ function StatCard() {
     <div className="Statcard">
       <div className="Statcard-Wrapper">
         <div className="firstCard">
-        <div style={{ display : "flex", width :'100%', flexDirection:'column'}} className="divider">
-        <div className="firstCardWrapper">
-          <div className="box1-container">
-            <div className="box-1">
-              <p>Active User</p>
-              <h3>
-                24<span className="gray">/80</span>
-              </h3>
+          <div
+            style={{ display: "flex", width: "100%", flexDirection: "column" }}
+            className="divider"
+          >
+            <div className="firstCardWrapper">
+              <div className="box1-container">
+                <div className="box-1">
+                  <p>Active User</p>
+                  <h3>
+                    24<span className="gray">/80</span>
+                  </h3>
+                </div>
+              </div>
+              <div className="box2-container">
+                <div className="box-2">
+                  <p>Answered Questions</p>
+                  <h3>3,296</h3>
+                </div>
+              </div>
+              <div className="box34-container">
+                <div className="box-3 avg-session-mobile">
+                  <p>Av. Session Length</p>
+                  <h3>2m 34s</h3>
+                </div>
+              </div>
             </div>
-          </div>
-          <div className="box2-container">
-            <div className="box-2">
-              <p>Answered Questions</p>
-              <h3>3,296</h3>
-            </div>
-          </div>
-          <div className="box34-container">
-            <div className="box-3 avg-session-mobile">
-              <p>Av. Session Length</p>
-              <h3>2m 34s</h3>
-            </div>
-          </div>
-         </div>
 
-          <div className="secondBox">
-            
-            <div className="box-4 av-session">
-              <p>Av. Session Length</p>
-              <h3>2m 34s</h3>
-           </div>
-            
-        
-              
-            {/* <div className="box-1">
+            <div className="secondBox">
+              <div className="box-4 av-session">
+                <p>Av. Session Length</p>
+                <h3>2m 34s</h3>
+              </div>
+
+              {/* <div className="box-1">
               <div className="new-avarageBox">
                 <p>Av. Session Length</p>
                 <h3>2m 34s</h3>
               </div>
             </div> */}
-            <div className="box-5">
-            {/* <div className="secondbox-1"> */}
-              <p>Starting Knowledge</p>
-              <h3>64%</h3>
-              <SparkLine />
-              {/* </div> */}
-            </div>
-            <div className="box-6">
-            {/* <div className="secondbox-1"> */}
-              <p>Current Knowledge</p>
-              <h3>60%</h3>
-              <SparkLine />
+              <div className="box-5">
+                {/* <div className="secondbox-1"> */}
+                <p>Starting Knowledge</p>
+                <h3>64%</h3>
+                <SparkLine />
+                {/* </div> */}
               </div>
-            {/* </div> */}
-            <div className="box-6">
-              <p>Knowledge Gain</p>
-              <h3>+4%</h3>
-              <SparkLine />
-            </div>
-            
+              <div className="box-6">
+                {/* <div className="secondbox-1"> */}
+                <p>Current Knowledge</p>
+                <h3>60%</h3>
+                <SparkLine />
+              </div>
+              {/* </div> */}
+              <div className="box-6">
+                <p>Knowledge Gain</p>
+                <h3>+4%</h3>
+                <SparkLine />
+              </div>
             </div>
           </div>
-         
         </div>
-        
-                <div className="secondCard">
+
+        <div className="secondCard">
           <ActivityChart />
         </div>
-      
       </div>
-        
+
       {/* TOPIC SECTION */}
       <div className="topicCard">
         <div className="topicCardWrapper">
@@ -180,8 +177,6 @@ function StatCard() {
           <div className="leaderCardWrapper">
             <div className="leaderTopicCard">
               <Leaderboard />
-
-            
             </div>
 
             <div className="secondleaderTopicCard">

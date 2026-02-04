@@ -10,11 +10,26 @@ function App() {
   return (
     <div className="App">
       <Sidebar openMenu={openMenu} />
+     
+     
+     
+     <div className="joined-container">
+      
+      <Header openMenu={openMenu} setOpenMenu={setOpenMenu} />
+       <StatCard />
 
-      <div className="joined-container">
-        <Header openMenu={openMenu} setOpenMenu={setOpenMenu} />
-        <StatCard />
-      </div>
+
+     </div>
+
+    
+        
+    
+      
+      
+     
+      
+       
+     
     </div>
   );
 }

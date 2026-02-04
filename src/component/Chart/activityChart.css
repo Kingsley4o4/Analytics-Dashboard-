@@ -51,24 +51,12 @@
 
 
  }
- /* @media (max-width:460px) {
-
- .activity-chart{
-
-
-
 }
 
- }
- 
-
-
-/* Tablet */
-@media (min-width: 641px) and (max-width: 1024px) {
-
+@media (min-width: 641px) and (max-width: 1024px){
+  .activity-chart{
+    margin-inline: 15px;
+  }
 }
 
 
-/* Desktop */
-@media (min-width: 1025px) {
-}
