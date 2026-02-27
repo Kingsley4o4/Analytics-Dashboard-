@@ -11,14 +11,14 @@ import Img4 from "../StatCard/Img/img4.png";
 import Img5 from "../StatCard/Img/img5.png";
 import Img6 from "../StatCard/Img/img6.png";
 import { ArrowBigDown, ArrowDown, ChevronUp, ChevronDown } from "lucide-react";
-
+import Header from "../../component/Header/Header";
 
 import Leaderboard from "../StatCard/Leaderboard/Leaderboard";
 
-function StatCard() {
+function StatCard( {openMenu ,setOpenMenu}) {
   return (
     <div className="Statcard">
-     
+      {/* <Header openMenu={openMenu} setOpenMenu={setOpenMenu} /> */}
       <div className="Statcard-Wrapper">
         <div className="firstCard">
           <div

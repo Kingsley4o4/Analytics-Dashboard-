@@ -1,16 +1,25 @@
 import { useState } from "react";
 import "./dropdown.css"
 
-export default function Dropdown({
+ function Dropdown({
      lable,
   options,
   defaultValue,
+  hideDropDown,
+ 
+  
+  
+  
+
+  
+  
 
 
 }) {
 
   const [open, setOpen] = useState(false);
   const [selected, setSelected] = useState(defaultValue || options[0]);
+ 
 
   return (
    
@@ -44,3 +53,6 @@ export default function Dropdown({
    
   );
 }
+
+
+export default Dropdown

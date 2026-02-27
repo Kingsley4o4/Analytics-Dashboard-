@@ -3,38 +3,38 @@ import { useState } from "react";
 import Sidebar from "./component/Sidebar/Sidebar";
 import Header from "./component/Header/Header";
 import StatCard from "./component/StatCard/StatCard";
-import { AppWindow, Sliders } from "lucide-react";
 
 function App() {
   const [openMenu, setOpenMenu] = useState(false);
   const [activeBtn, setActivebtn] = useState(null);
-
-  
+  const [showDropdown, setShowDropdown] = useState(false);
 
   const display1 = (
-    <div>
+    <div
+     className="DisplayCard"
+    >
       <h1>Library</h1>
     </div>
   );
   const display2 = (
-    <div>
+    <div  className="DisplayCard">
       <h1>people</h1>
     </div>
   );
 
   const display3 = (
-    <div>
+    <div  className="DisplayCard">
       <h1>Activites</h1>
     </div>
   );
 
   const display4 = (
-    <div>
+    <div  className="DisplayCard">
       <h1>Get Started</h1>
     </div>
   );
   const display5 = (
-    <div>
+    <div  className="DisplayCard">
       <h1>Settings</h1>
     </div>
   );
@@ -45,13 +45,19 @@ function App() {
         activeBtn={activeBtn}
         setActivebtn={setActivebtn}
         openMenu={openMenu}
+        setShowDropdown={setShowDropdown}
       />
 
       <div className="joined-container">
-
-        {activeBtn === null ? <Header /> : null}
-       
-        
+        <Header
+          activeBtn={activeBtn}
+          setActivebtn={setActivebtn}
+          openMenu={openMenu}
+          setOpenMenu={setOpenMenu}
+          showDropdown={showDropdown}
+          setShowDropdown={setShowDropdown}
+        />
+        {/* {activeBtn === null ? <Header openMenu={openMenu} setOpenMenu={setOpenMenu}/> : null} */}
 
         {activeBtn === null ? <StatCard /> : null}
 

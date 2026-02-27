@@ -4,8 +4,11 @@
   cursor: pointer;
   display: flex;
   flex-wrap: wrap;
+    
 }
+.dropdown{
 
+}
 
 .trigger {
   width: 320px;

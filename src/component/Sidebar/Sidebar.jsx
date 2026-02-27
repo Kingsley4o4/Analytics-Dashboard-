@@ -11,7 +11,7 @@ import {
   Menu,
 } from "lucide-react";
 
-const Sidebar = ({ openMenu, setActivebtn, activeBtn }) => {
+const Sidebar = ({ openMenu, setActivebtn, activeBtn, setShowDropdown }) => {
   return (
     <div className={`sidebar ${openMenu ? "show" : ""}`}>
       <div className="sidebar-wrapper">
@@ -21,14 +21,20 @@ const Sidebar = ({ openMenu, setActivebtn, activeBtn }) => {
 
         <div className="otherMenu">
           <h2
-            onClick={() => setActivebtn(null)}
-            className={`actve ${activeBtn === null && "active"}`}
+            onClick={() => {
+              setActivebtn(null);
+              setShowDropdown(false);
+            }}
+            className={`  ${activeBtn === null && "active"} `}
           >
             <TrendingUp size={18} className="icon" />
             Reports
           </h2>
           <h2
-            onClick={() => setActivebtn(0)}
+            onClick={() => {
+              setActivebtn(0);
+              setShowDropdown(true);
+            }}
             className={` ${activeBtn === 0 && "active"}`}
           >
             <Zap size={18} className="icon" />
@@ -36,14 +42,20 @@ const Sidebar = ({ openMenu, setActivebtn, activeBtn }) => {
           </h2>
           <h2
             className={` ${activeBtn === 1 && "active"}`}
-            onClick={() => setActivebtn(1)}
+            onClick={() => {
+              setActivebtn(1);
+              setShowDropdown(true);
+            }}
           >
             <Users size={18} className="icon" />
             People
           </h2>
           <h2
             className={` ${activeBtn === 2 && "active"}`}
-            onClick={() => setActivebtn(2)}
+            onClick={() => {
+              setActivebtn(2);
+              setShowDropdown(true);
+            }}
           >
             <NotebookText size={18} className="icon" />
             Activites
@@ -55,14 +67,20 @@ const Sidebar = ({ openMenu, setActivebtn, activeBtn }) => {
         <div className="otherMenu">
           <h2
             className={` ${activeBtn === 3 && "active"}`}
-            onClick={() => setActivebtn(3)}
+            onClick={() => {
+              setActivebtn(3);
+              setShowDropdown(true);
+            }}
           >
             <Lightbulb size={18} className="icon" />
             Get Started
           </h2>
           <h2
             className={` ${activeBtn === 4 && "active"}`}
-            onClick={() => setActivebtn(4)}
+            onClick={() => {
+              setActivebtn(4);
+              setShowDropdown(true);
+            }}
           >
             <Settings size={18} className="icon" />
             Settings
