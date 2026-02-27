@@ -1,15 +1,18 @@
 .header {
   width: 100%;
-
+  
   padding: 15px 0;
 }
 .header-contents {
+ 
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding-left: 25px;
   padding-right: 25px;
   gap: 15px;
+ 
+  
 }
 
 .mobile-menu h3 {
@@ -47,9 +50,13 @@
   margin-left: 25px;
   margin-right: 25px;
   display: flex;
-  justify-items: center;
-  gap: 20px;
+  /* justify-items: center;
+  gap: 20px; */
+ 
+  justify-content: space-between;
+ 
 }
+
 
 .selection-wrapper {
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
@@ -63,6 +70,7 @@
   border: 1px solid rgba(0, 0, 0, 0.08);
   background: #fff;
   flex-wrap: wrap;
+  
 }
 
 .selection-wrapper label {

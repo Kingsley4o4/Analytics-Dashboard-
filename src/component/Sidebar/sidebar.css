@@ -1,6 +1,11 @@
 .sidebar {
-  width: 230px;
-
+  width: 180px;
+  height: 100vh;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 100;
+  background-color: #fff;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
@@ -27,9 +32,14 @@
 .otherMenu h2 {
   font-size: 18px;
   font-weight: 400;
-  padding: 15px;
+  padding: 6px;
   cursor: pointer;
   display: flex;
+  align-items: center;
+}
+
+.otherMenu {
+  padding: 6px;
 }
 
 .icon {
@@ -46,18 +56,23 @@
 .user-profile {
   display: flex;
   justify-content: center;
-  margin-top: 370px;
   flex-direction: column;
 }
 
 .active {
+  border-radius: 10px;
+  color: blue;
+  padding: 10px;
+  background-color: #1b59f81a;
+}
+/* .active {
   background: #1b59f81a;
   height: 20px;
   border-radius: 10px;
   color: blue;
   cursor: pointer;
   margin-inline: 10px;
-}
+} */
 
 /* Responsiveness */
 

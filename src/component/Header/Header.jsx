@@ -48,7 +48,11 @@ const Header = ({ openMenu, setOpenMenu }) => {
         </div>
 
         <div className="selection-wrapper">
-          <Dropdown lable="topic" options={["All"]} defaultValue="All" />
+          
+             <Dropdown lable="topic" options={["All"]} defaultValue="All" />
+
+        
+         
         </div>
       </div>
        </div>

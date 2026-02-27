@@ -1,5 +1,5 @@
 .App {
-   overflow: hidden;
+  overflow: hidden;
   display: flex;
   font-family:
     system-ui,
@@ -13,21 +13,24 @@
     "Open Sans",
     "Helvetica Neue",
     sans-serif;
- 
 }
 
-@media (min-width:1025px) {
-
-   .App{
-      
-      overflow:auto;
-   }
-   
+@media (min-width: 1025px) {
+  .App {
+    overflow: auto;
+  }
 }
-
 
 .joined-container {
-   width: 100%;
-   
+  width: 100%;
   
+}
+
+@media (min-width: 1025px) {
+  .joined-container {
+    margin-left: 180px;
+    display: flex;
+  flex-wrap: wrap;
+   
+  }
 }

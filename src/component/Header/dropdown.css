@@ -1,17 +1,17 @@
-
 .dropdown {
   width: 300px;
   position: relative;
   cursor: pointer;
- 
-
+  display: flex;
+  flex-wrap: wrap;
 }
 
+
 .trigger {
- width: 320px;
- 
+  width: 320px;
+
   border-radius: 14px;
- 
+
   cursor: pointer;
 }
 
@@ -20,7 +20,7 @@
   padding: 8px;
   background: #fff;
   border-radius: 16px;
-  box-shadow: 0 12px 28px rgba(0,0,0,0.12);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.12);
 }
 
 .option {
@@ -45,17 +45,12 @@
   border-right: 6px solid transparent;
   border-top: 6px solid rgba(0, 0, 0, 0.6);
   pointer-events: none;
-   
 }
-
 
 /* Responsiveness */
 
 /* Mobile */
 @media (max-width: 640px) {
- 
-
-  
 }
 
 /* Tablet */

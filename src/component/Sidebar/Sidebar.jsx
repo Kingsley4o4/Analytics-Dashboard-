@@ -1,3 +1,4 @@
+import { useState } from "react";
 import "./sidebar.css";
 import SidebarLogo from "./TESLA.png";
 import {
@@ -10,30 +11,41 @@ import {
   Menu,
 } from "lucide-react";
 
-const Sidebar = ({openMenu}) => {
+const Sidebar = ({ openMenu, setActivebtn, activeBtn }) => {
   return (
     <div className={`sidebar ${openMenu ? "show" : ""}`}>
       <div className="sidebar-wrapper">
-        
         <div className="Logo">
           <img src={SidebarLogo} alt="" />
         </div>
 
         <div className="otherMenu">
-          <h2 className="active">
-            <TrendingUp className="icon" />
+          <h2
+            onClick={() => setActivebtn(null)}
+            className={`actve ${activeBtn === null && "active"}`}
+          >
+            <TrendingUp size={18} className="icon" />
             Reports
           </h2>
-          <h2>
-            <Zap className="icon" />
+          <h2
+            onClick={() => setActivebtn(0)}
+            className={` ${activeBtn === 0 && "active"}`}
+          >
+            <Zap size={18} className="icon" />
             Library
           </h2>
-          <h2>
-            <Users className="icon" />
+          <h2
+            className={` ${activeBtn === 1 && "active"}`}
+            onClick={() => setActivebtn(1)}
+          >
+            <Users size={18} className="icon" />
             People
           </h2>
-          <h2>
-            <NotebookText className="icon" />
+          <h2
+            className={` ${activeBtn === 2 && "active"}`}
+            onClick={() => setActivebtn(2)}
+          >
+            <NotebookText size={18} className="icon" />
             Activites
           </h2>
         </div>
@@ -41,12 +53,18 @@ const Sidebar = ({openMenu}) => {
         <h3 style={{ color: "gray", marginLeft: "20px" }}>Support</h3>
 
         <div className="otherMenu">
-          <h2>
-            <Lightbulb className="icon" />
+          <h2
+            className={` ${activeBtn === 3 && "active"}`}
+            onClick={() => setActivebtn(3)}
+          >
+            <Lightbulb size={18} className="icon" />
             Get Started
           </h2>
-          <h2>
-            <Settings className="icon" />
+          <h2
+            className={` ${activeBtn === 4 && "active"}`}
+            onClick={() => setActivebtn(4)}
+          >
+            <Settings size={18} className="icon" />
             Settings
           </h2>
 
@@ -57,7 +75,7 @@ const Sidebar = ({openMenu}) => {
                 borderRadius: "50px",
                 height: "30px",
                 width: "30px",
-                marginLeft: "20px",
+
                 marginTop: "30px",
               }}
               src={SidebarLogo}
@@ -67,23 +85,19 @@ const Sidebar = ({openMenu}) => {
               style={{
                 fontSize: "14px",
                 fontWeight: "500",
-                marginLeft: "20px",
+
                 marginTop: "7px",
               }}
             >
               Kingsley
             </span>
-            <span
-              style={{ fontSize: "11px", marginLeft: "20px", color: "gray" }}
-            >
+            <span style={{ fontSize: "11px", color: "gray" }}>
               olorunfemiolakunle44@gmail.com
             </span>
           </div>
         </div>
       </div>
-     </div>
-    
-  
+    </div>
   );
 };
 

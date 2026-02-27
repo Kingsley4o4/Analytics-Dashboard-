@@ -13,7 +13,8 @@ export default function Dropdown({
   const [selected, setSelected] = useState(defaultValue || options[0]);
 
   return (
-    <div className="dropdown">
+   
+       <div className="dropdown">
       <div
         className="trigger"
         onClick={() => setOpen(!open)}
@@ -38,5 +39,8 @@ export default function Dropdown({
         </div>
       )}
     </div>
+
+   
+   
   );
 }

@@ -12,11 +12,13 @@ import Img5 from "../StatCard/Img/img5.png";
 import Img6 from "../StatCard/Img/img6.png";
 import { ArrowBigDown, ArrowDown, ChevronUp, ChevronDown } from "lucide-react";
 
+
 import Leaderboard from "../StatCard/Leaderboard/Leaderboard";
 
 function StatCard() {
   return (
     <div className="Statcard">
+     
       <div className="Statcard-Wrapper">
         <div className="firstCard">
           <div
