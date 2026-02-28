@@ -35,7 +35,7 @@
 .otherMenu h2 {
   font-size: 18px;
   font-weight: 400;
-  padding: 6px;
+  padding: 12px;
   cursor: pointer;
   display: flex;
   align-items: center;
@@ -60,6 +60,8 @@
   display: flex;
   justify-content: center;
   flex-direction: column;
+
+
 }
 
 .active {
