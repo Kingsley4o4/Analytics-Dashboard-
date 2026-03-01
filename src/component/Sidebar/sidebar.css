@@ -1,14 +1,29 @@
 .sidebar {
   width: 180px;
-  height: 100vh;
+
   position: fixed;
+
   left: 0;
   top: 0;
-  z-index: 100;
+ 
   background-color: #fff;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
+
+  /*  
+  */
+
+
+    height: 100vh;
+    
+    z-index: 1000;
+   
+    transition: transform 0.3s ease;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+ 
 }
 .activeDropDown{
   display: none;
@@ -16,7 +31,7 @@
 
 .Logo {
   width: 100%;
-  height: 70px;
+  height: 80px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -35,14 +50,17 @@
 .otherMenu h2 {
   font-size: 18px;
   font-weight: 400;
-  padding: 12px;
+  padding: 8px;
   cursor: pointer;
   display: flex;
   align-items: center;
 }
 
 .otherMenu {
-  padding: 6px;
+  padding-left:10px;
+  
+  margin-top:-0.4rem;
+  padding: 2px;
 }
 
 .icon {
@@ -53,17 +71,26 @@
   background-color: rgba(128, 128, 128, 0.279);
   height: 1px;
   width: 84%;
-  margin: 0 auto;
+  margin:auto;
+
+
 }
 
 .user-profile {
+    margin-top:-0.4rem;
+   
+   
+   
   display: flex;
   justify-content: center;
   flex-direction: column;
+  
 
 
 }
-
+.sidebar-wrapper {
+  height:100%;
+}
 .active {
   border-radius: 10px;
   color: blue;
