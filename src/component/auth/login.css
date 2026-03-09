@@ -1,0 +1,62 @@
+
+
+.Login{
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+     
+      width:100%;
+      height:100vh;
+
+}
+
+.modial{
+    border-radius:10px;
+    height:32rem;
+    width:30rem;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    display: flex;
+    flex-direction:column;
+    align-items:center;
+
+
+}
+
+.inputContainer{
+    display:flex;
+    flex-direction:column;
+    gap: 20px;
+    align-items:center;
+    margin-top: 2rem;
+}
+
+.modial span{
+    font-size:  24px;
+    font-weight: 600;
+}
+
+
+.padlock{
+    border:3px solid blueviolet;
+    border-radius:50%;
+    padding:35px;
+}
+
+input{
+   padding:0.7rem;
+   outline: none;
+   width: 20rem;
+   border-radius:6px;
+   border: 1px solid gray;
+}
+
+button{
+    padding:0.8rem;
+    border-radius:6px;
+    border: none;
+    background-color: blueviolet;
+    color: white;
+    cursor: pointer;
+    width: 20rem;
+}

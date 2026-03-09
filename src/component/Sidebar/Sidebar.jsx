@@ -1,6 +1,8 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import "./sidebar.css";
 import SidebarLogo from "./TESLA.png";
+
+import { auth } from "../Firebase/firebase";
 import {
   TrendingUp,
   Zap,
@@ -11,7 +13,21 @@ import {
   Menu,
 } from "lucide-react";
 
-const Sidebar = ({ openMenu, setActivebtn, activeBtn, setShowDropdown }) => {
+const Sidebar = ({
+  openMenu,
+  setActivebtn,
+  activeBtn,
+  setShowDropdown,
+
+passUserRegisterNameSignUp,
+ setPassUserRegisterNameSignUp
+
+  
+}) => {
+ 
+
+
+
   return (
     <div className={`sidebar ${openMenu ? "show" : ""}`}>
       <div className="sidebar-wrapper">
@@ -101,16 +117,17 @@ const Sidebar = ({ openMenu, setActivebtn, activeBtn, setShowDropdown }) => {
             />
             <span
               style={{
-                fontSize: "14px",
-                fontWeight: "500",
-
+              fontSize: "1rem",
+                fontWeight: "700",
                 marginTop: "7px",
+                fontFamily:"italic"
               }}
             >
-              Kingsley
+              {passUserRegisterNameSignUp || "Guest"}
+             
             </span>
             <span style={{ fontSize: "11px", color: "gray" }}>
-              olorunfemiolakunle44@gmail.com
+            hello
             </span>
           </div>
         </div>
