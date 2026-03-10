@@ -6,6 +6,9 @@
   height: 97vh;
 }
 
+input::placeholder{
+  font-size: 12px;
+}
 .modial {
   padding-top:40px;
   border-radius: 10px;
@@ -22,9 +25,9 @@
 .inputContainer {
   display: flex;
   flex-direction: column;
-  gap: 20px;
-  align-items: center;
-  margin-top: 2rem;
+  
+  /* align-items: center; */
+  margin-top: 1rem;
 }
 
 .modial span {
@@ -33,6 +36,7 @@
 }
 
 .padlock {
+ 
   border: 3px solid blueviolet;
   border-radius: 50%;
   padding: 35px;
@@ -101,16 +105,19 @@ button {
 }
 
 @media (max-width: 480px) {
+   
   .modial {
-    margin: 0.5rem;
-    padding: 1rem;
+    margin:0 auto;
+    padding: 0 2rem;
     border-radius: 8px;
+    height: 30rem;
   }
 
   .inputContainer {
     margin-top: 1rem;
   }
 
+ 
   .modial span {
     font-size: 18px;
   }
@@ -132,6 +139,7 @@ button {
   .modial {
     margin: 0.2rem;
     padding: 0.8rem;
+  
   }
 
   .modial span {

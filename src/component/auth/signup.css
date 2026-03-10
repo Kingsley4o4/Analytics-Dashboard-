@@ -10,6 +10,9 @@
   font-size: 24px;
   font-weight: 600;
 }
+input::placeholder{
+  font-size: 12px;
+}
 .modial-signup {
   /* margin-top: 2rem; */
   display: flex;
@@ -81,15 +84,13 @@ i {
 @media (max-width: 768px) {
   .SignUp {
    
-
+    
     min-height: 97vh;
   }
 
   .modial-signup {
     margin: 1rem;
-    
-    width: 100%;
-    max-width: 24rem;
+    width: 26rem;
     box-shadow:
       rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
       rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
@@ -136,10 +137,12 @@ i {
     margin: 0.5rem;
     padding: 1rem;
     border-radius: 8px;
+    width:21rem;
   }
 
   .modialCard {
     padding: 0.8rem;
+    height: 26rem;
   }
 
   .first-content {
@@ -161,7 +164,7 @@ i {
 
 @media (max-width: 320px) {
   .modial-signup {
-  
+    
     margin: 0.2rem;
     padding: 0.8rem;
   }

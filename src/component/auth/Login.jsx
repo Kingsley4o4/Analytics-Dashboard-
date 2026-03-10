@@ -88,26 +88,28 @@ function Login() {
           <i>Enter your credentials to access your account</i>
 
           <div className="inputContainer">
+            <label>Email</label>
             <input
               type="email"
               onChange={(e) => setValidateEmail(e.target.value)}
               value={validateEmail}
               placeholder="Enter your Gmail.."
             />
-            <span style={{ marginTop: "-25px" }}>
+            <span >
               {error.emailCheck && (
-                <span style={{ color: "red", fontSize: "12px" }}>
+                <span style={{ color: "red", fontSize: "12px",}}>
                   {error.emailCheck}
                 </span>
               )}
             </span>
+            <label>Password</label>
             <input
               type="password"
               onChange={(e) => setValidatePassword(e.target.value)}
               value={validatePassword}
               placeholder="Enter your Password.."
             />
-            <span style={{ marginTop: "-25px" }}>
+            <span style={{ marginTop: "" }}>
               {error.passwordCheck && (
                 <span style={{ color: "red" }}>
                   {validatePassword.length >= 8 ? (
@@ -122,7 +124,7 @@ function Login() {
             </span>
             <button onClick={handleClick}> {isLoading ? "Loading..." : "Login"} </button>
          <span style={{ fontSize: "15px",color:"red" }}>{error.LoginError}</span>
-            <span style={{ fontSize: "15px" }}>
+            <span style={{ fontSize: "15px", marginTop:"20px", textAlign:"center" }}>
               Don't have an account? <Link to="/signup">Sign up now</Link>
             </span>
           </div>

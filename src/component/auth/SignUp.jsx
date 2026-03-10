@@ -164,7 +164,12 @@ const SignUp = ({userRegisterNameSignUp, setUserRegisterNameSignUp}) => {
                 fontSize: "15px",
                 textAlign: "center",
                 marginTop: "20px",
-                paddingInline: "7rem",
+                display:"flex",
+                justifyContent:"center",
+                alignItems:"center",
+                padding:"0 3.6rem"
+                
+               
               }}
             >
               Already have an account? <Link to="/"> Login </Link>
