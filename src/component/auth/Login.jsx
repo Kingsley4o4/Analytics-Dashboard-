@@ -77,9 +77,7 @@ function Login() {
     <div className="Login">
       <div className="loginWrapper">
         <div className="modial">
-          <div className="ImgIcon">
-            <img src=" " />
-          </div>
+
 
           <div className="padlock">
             <LockKeyhole color="blueviolet" size={50} />

@@ -118,12 +118,13 @@ passUserRegisterNameSignUp,
             <span
               style={{
               fontSize: "1rem",
-                fontWeight: "700",
+                fontWeight: "600",
                 marginTop: "7px",
-                fontFamily:"italic"
+                color:"gray"
+                
               }}
             >
-              {passUserRegisterNameSignUp || "Guest"}
+              {passUserRegisterNameSignUp}
              
             </span>
             <span style={{ fontSize: "11px", color: "gray" }}>

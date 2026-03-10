@@ -1,28 +1,26 @@
 .SignUp {
   width: 100%;
-  height:100vh;
+  height: 97vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
 }
-.modial-signup span{
-     font-size:  24px;
-    font-weight: 600;
-
+.modial-signup span {
+  font-size: 24px;
+  font-weight: 600;
 }
 .modial-signup {
-    margin-top:2rem;
-    display:flex;
-    flex-direction:column;
-    justify-content: center;
-    align-items: center;
-    border-radius:20px;
- 
-
+  /* margin-top: 2rem; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
 
   box-shadow:
-    rgba(0, 0, 0, 0.25) 0px 54px 55px,
-    rgba(0, 0, 0, 0.12) 0px -12px 30px,
-    rgba(0, 0, 0, 0.12) 0px 4px 6px,
-    rgba(0, 0, 0, 0.17) 0px 12px 13px,
-    rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
 }
 
 .SignUp-container {
@@ -32,49 +30,151 @@
 .modialCard {
   display: flex;
   align-items: flex-start;
- 
   height: 31rem;
-  width: 29rem;
-
+  width: 27rem;
   flex-direction: column;
   padding: 2rem;
   box-sizing: border-box;
   text-align: left;
 }
 
-
 .modialCard input {
-    padding: 0.9rem;
-    outline: none;
-    width: 23rem;
-    border: 1px solid #ccc;
-    border-radius: 7px;
-   
+  display: flex;
+
+  padding: 0.9rem;
+  outline: none;
+  width: 100%;
+  max-width: 23rem;
+  border: 1px solid #ccc;
+  border-radius: 7px;
+  box-sizing: border-box;
 }
 
-label{
-
- padding-block: 5px;
- font-weight: 600;
- font-size:14px;
+label {
+  padding-block: 5px;
+  font-weight: 600;
+  font-size: 14px;
 }
 
-button{
-    margin-top:20px;
-     padding:0.8rem;
-    border-radius:6px;
-    border: none;
-    background-color: blueviolet;
-    color: white;
-    cursor: pointer;
-    width: 25rem;
+button {
+  margin-top: 20px;
+  padding: 0.8rem;
+  border-radius: 6px;
+  border: none;
+  background-color: blueviolet;
+  color: white;
+  cursor: pointer;
+  width: 100%;
+  max-width: 25rem;
+  box-sizing: border-box;
 }
 
-.first-content{
-  margin-top:2rem;
+.first-content {
+  margin-top: 2rem;
 }
 
-i{
-  padding-top:0.4rem;
+i {
+  padding-top: 0.4rem;
   font-style: normal;
+}
+
+@media (max-width: 768px) {
+  .SignUp {
+   
+
+    min-height: 97vh;
+  }
+
+  .modial-signup {
+    margin: 1rem;
+    
+    width: 100%;
+    max-width: 24rem;
+    box-shadow:
+      rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+      rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    border-radius: 12px;
+  }
+
+  .modialCard {
+    padding: 1rem;
+    width: 100%;
+  }
+
+  .modialCard input {
+    width: 100%;
+    padding: 0.8rem;
+    font-size: 16px;
+  }
+
+  button {
+    width: 100%;
+    padding: 0.9rem;
+    font-size: 16px;
+  }
+
+  .first-content {
+    font-size: 20px;
+    margin-top: 1rem;
+  }
+
+  i {
+    font-size: 14px;
+  }
+
+  label {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 480px) {
+  .SignUp {
+ 
+  }
+
+  .modial-signup {
+    margin: 0.5rem;
+    padding: 1rem;
+    border-radius: 8px;
+  }
+
+  .modialCard {
+    padding: 0.8rem;
+  }
+
+  .first-content {
+    font-size: 18px;
+  }
+
+  i {
+    font-size: 13px;
+  }
+
+  .modialCard input {
+    padding: 0.7rem;
+  }
+
+  button {
+    padding: 0.8rem;
+  }
+}
+
+@media (max-width: 320px) {
+  .modial-signup {
+  
+    margin: 0.2rem;
+    padding: 0.8rem;
+  }
+
+  .first-content {
+    font-size: 16px;
+  }
+
+  .modialCard input {
+    padding: 0.6rem;
+  }
+
+  button {
+    padding: 0.7rem;
+  }
 }
